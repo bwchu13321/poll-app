@@ -51,4 +51,4 @@ io.on('connection', (socket) => {
 });
 
 /* INIT */
-http.listen(app.get('port'), () => console.log(`Listening on port ${app.get('PORT')}`));
+http.listen(app.get('PORT'), () => console.log(`Listening on port ${app.get('PORT')}`));
