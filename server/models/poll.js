@@ -2,9 +2,6 @@ const Sequelize = require('sequelize');
 
 module.exports = (Models) => {
   const Poll = Models.define('Poll', {
-    userId: {
-      type: Sequelize.INTEGER
-    },
     type: {
       type: Sequelize.STRING
     },
