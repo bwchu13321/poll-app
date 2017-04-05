@@ -30,7 +30,7 @@ const path = require('path');
 /* MIDDLEWARE */
 app.use(morgan('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true} ));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 /* MISC */
@@ -43,7 +43,7 @@ app.get('/', express.static(path.join(__dirname, '../src')));
 // sync models here
 
 /* ROUTING */
-// app.use('/api', ROUTER_NAME_HERE);
+// app.use('/api', ROUTER_NAME_HERE)
 
 // MISC
 io.on('connection', (socket) => {
